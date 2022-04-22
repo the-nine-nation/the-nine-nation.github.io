@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="随便发点难以过审的东西，以及个人随笔">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欢迎来到罗宁的个人空间">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="欢迎来到罗宁的个人空间">
+<meta property="og:description" content="随便发点难以过审的东西，以及个人随笔">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="lzy">
+<meta property="article:tag" content="political theories, 科学社会论，小说，Python，c#，c，深度学习">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>欢迎来到罗宁的个人空间</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="欢迎来到罗宁的个人空间" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">欢迎来到罗宁的个人空间</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个平平无奇的作者</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">4</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/22/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dog.jpg">
+      <meta itemprop="name" content="lzy">
+      <meta itemprop="description" content="随便发点难以过审的东西，以及个人随笔">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欢迎来到罗宁的个人空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/22/hello-world/" class="post-title-link" itemprop="url">简短的扉页</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-22 21:39:09" itemprop="dateCreated datePublished" datetime="2022-04-22T21:39:09+08:00">2022-04-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-21 15:28:53" itemprop="dateModified" datetime="2022-04-21T15:28:53+08:00">2022-04-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>鉴于中国大陆互联网言论管制严格，许多作品都被以奇奇怪怪的理由拒绝，恰巧想起github还能做这么一个静态网页，便决定逐步将其整理、搬运至此。并取名为<strong>“第九国际”</strong>，希望互联网的去中心化趋势永不停歇，给腐朽、陈旧的现实松松土。</p>
+<h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><h3 id="科学社会论"><a href="#科学社会论" class="headerlink" title="科学社会论"></a>科学社会论</h3><p>一个现代的、动态的社会理论，包含社会观、简述、论证及实现方法</p>
+<p>详见: <a href="/2022/04/21/ScienceCommunity/" title="科学社会论">科学社会论</a></p>
+<h3 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h3><p>鄙人不才，闲暇时间学点东西，整理笔记收录至此<br>-python<br>*python环境搭建方法及常用命令： <a href="/2022/04/21/pythondoc/" title="pythondoc">pythondoc</a><br>-C#<br>*尚未更新 </p>
+<h3 id="时评文章"><a href="#时评文章" class="headerlink" title="时评文章"></a>时评文章</h3><p>对当前社会事件的评论</p>
+<h3 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h3><p>通常在起点等地无法过审的文章<br>-sf轻小说链接：<br><a target="_blank" rel="noopener" href="http://book.sfacg.com/Novel/529832/">http://book.sfacg.com/Novel/529832/</a>  （正在写的一篇，不定时更新）<br><a target="_blank" rel="noopener" href="http://book.sfacg.com/Novel/271930/">http://book.sfacg.com/Novel/271930/</a>    （已完结但被和谐严重的一篇）  </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/22/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dog.jpg">
+      <meta itemprop="name" content="lzy">
+      <meta itemprop="description" content="随便发点难以过审的东西，以及个人随笔">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欢迎来到罗宁的个人空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/22/test/" class="post-title-link" itemprop="url">test</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-04-22 16:34:05 / 修改时间：20:47:00" itemprop="dateCreated datePublished" datetime="2022-04-22T16:34:05+08:00">2022-04-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <img src="/2022/04/22/test/1.jpg" class="">
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/21/pythondoc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dog.jpg">
+      <meta itemprop="name" content="lzy">
+      <meta itemprop="description" content="随便发点难以过审的东西，以及个人随笔">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欢迎来到罗宁的个人空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/21/pythondoc/" class="post-title-link" itemprop="url">pythondoc</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-21 14:49:07" itemprop="dateCreated datePublished" datetime="2022-04-21T14:49:07+08:00">2022-04-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-22 19:36:04" itemprop="dateModified" datetime="2022-04-22T19:36:04+08:00">2022-04-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><h2 id="镜像源"><a href="#镜像源" class="headerlink" title="镜像源"></a>镜像源</h2><p>清华：<strong><a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a></strong><br>阿里云：<strong><a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a></strong><br>中国科技大学 <strong><a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">https://pypi.mirrors.ustc.edu.cn/simple/</a></strong><br>华中理工大学：<strong><a target="_blank" rel="noopener" href="http://pypi.hustunique.com/">http://pypi.hustunique.com/</a></strong><br>山东理工大学：<strong><a target="_blank" rel="noopener" href="http://pypi.sdutlinux.org/">http://pypi.sdutlinux.org/</a></strong><br>豆瓣：<strong><a target="_blank" rel="noopener" href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a></strong></p>
+<h2 id="关于镜像源命令（conda）"><a href="#关于镜像源命令（conda）" class="headerlink" title="关于镜像源命令（conda）"></a>关于镜像源命令（conda）</h2><p>-显示镜像源地址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --show channels  </span><br></pre></td></tr></table></figure>
+<p>-添加镜像源地址</p>
+<pre><code>conda config --remove channels url地址
+</code></pre>
+<p>-移除镜像源地址</p>
+<pre><code>conda config --add channels
+</code></pre>
+<p>-清除下载缓存（创建虚拟环境错误时使用）</p>
+<pre><code>conda clean -p
+conda clean -a
+</code></pre>
+<h2 id="虚拟环境命令"><a href="#虚拟环境命令" class="headerlink" title="虚拟环境命令"></a>虚拟环境命令</h2><p>-查看当前存在哪些虚拟环境</p>
+<pre><code>conda env list 
+conda info -e
+</code></pre>
+<p>-查看安装了那些包</p>
+<pre><code>conda list
+</code></pre>
+<p>-切换成32位虚拟环境</p>
+<pre><code>set CONDA_FORCE_32BIT=1
+</code></pre>
+<p>-检查并更新conda</p>
+<pre><code>conda update conda
+</code></pre>
+<p>-创建虚拟环境</p>
+<pre><code>conda create -n your_env_name python=x.x
+</code></pre>
+<p>注：anaconda命令创建python版本为x.x，名字为your_env_name的虚拟环境。your_env_name文件可以在Anaconda安装目录envs文件下找到。</p>
+<p>-命令行检查当前python版本</p>
+<pre><code>Linux:  source activate your_env_nam
+Windows: activate your_env_name
+</code></pre>
+<p>-虚拟环境中安装额外包</p>
+<pre><code>conda install -n your_env_name [package]
+</code></pre>
+<p>-关闭虚拟环境(即从当前环境退出返回使用PATH环境中的默认python版本)</p>
+<pre><code>windows：deactivate env_name
+或者`activate root`切回root环境
+Linux：source deactivate
+</code></pre>
+<p>-删除虚拟环境和环境下某个包</p>
+<pre><code>conda remove -n your_env_name --all`
+conda remove --name $your_env_name  $package_name 
+</code></pre>
+<h2 id="conda一键安装cuda和cudnn"><a href="#conda一键安装cuda和cudnn" class="headerlink" title="conda一键安装cuda和cudnn"></a>conda一键安装cuda和cudnn</h2><pre><code>conda install cudatoolkit=11.3 cudnn=8.2.1
+</code></pre>
+<ul>
+<li><strong>CUDA</strong> <strong>工具包 11.0</strong> <strong>配合 cuDNN v8.0.2</strong></li>
+<li><strong>CUDA</strong> <strong>工具包 11.1</strong> <strong>配合 cuDNN v8.1.1</strong></li>
+<li><strong>CUDA</strong> <strong>工具包 11.2</strong> <strong>配合 cuDNN v8.2.1</strong></li>
+</ul>
+<p>安装位置在library\lib</p>
+<h2 id="安装torch"><a href="#安装torch" class="headerlink" title="安装torch"></a>安装torch</h2><p>GPU版本：</p>
+<pre><code>conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+</code></pre>
+<p>CPU版本</p>
+<pre><code>conda install pytorch torchvision torchaudio cpuonly -c pytorch
+</code></pre>
+<h2 id="其它（某些易混淆概念）"><a href="#其它（某些易混淆概念）" class="headerlink" title="其它（某些易混淆概念）"></a>其它（某些易混淆概念）</h2><p>Pycahrm是一个python包管理工具，可以自由切换python版本，spyder是自带用于科学数据分析的工具，默认为base，需要进anaconda navigator内安装相应环境的spyder。</p>
+<h1 id="Python内容（不是教程！）"><a href="#Python内容（不是教程！）" class="headerlink" title="Python内容（不是教程！）"></a>Python内容（不是教程！）</h1><h2 id="检查是否存在全局变量"><a href="#检查是否存在全局变量" class="headerlink" title="检查是否存在全局变量"></a>检查是否存在全局变量</h2><pre><code>if &quot;var_name&quot; in globals():
+    print(&quot;var_nameexists!&quot;)elif &quot;var_name&quot; in locals():
+    print(&quot;var_name existslocally!&quot;)else:
+    print(&quot;var_name does notexist.&quot;)
+</code></pre>
+<p>可以分别利用 globals()和 locals()在全局和本地范围内检查变量。<br>globals和locals这两个作用域函数都会返回字典——因此也执行上述的字典合并语法{**x, **y}。代码在合并范围后的字典中同时检查了test1和test2。</p>
+<h2 id="Opencv"><a href="#Opencv" class="headerlink" title="Opencv"></a>Opencv</h2><h3 id="裁剪图片"><a href="#裁剪图片" class="headerlink" title="裁剪图片"></a>裁剪图片</h3><pre><code>resized1[y1:y2, x1:x2]=resized0
+</code></pre>
+<p>resized0是小图<br>resized1是大图，参数是左上点和右下点</p>
+<h3 id="在图片（或视频）中添加文字"><a href="#在图片（或视频）中添加文字" class="headerlink" title="在图片（或视频）中添加文字"></a>在图片（或视频）中添加文字</h3><p>示例：</p>
+<pre><code>cv2.putText(img, str(i), (123,456)), font, 2, (0,255,0), 3)
+</code></pre>
+<p>各参数依次是：图片，添加的文字，左上角坐标，字体，字体大小，颜色，字体粗细</p>
+<p><strong>其中字体可以选择</strong></p>
+<p>FONT_HERSHEY_SIMPLEX<br>Python: <code>cv.FONT_HERSHEY_SIMPLEX</code>  </p>
+<p>FONT_HERSHEY_PLAIN<br>Python: <code>cv.FONT_HERSHEY_PLAIN</code>  </p>
+<p>FONT_HERSHEY_DUPLEX<br>Python: <code>cv.FONT_HERSHEY_DUPLEX</code>  </p>
+<p>FONT_HERSHEY_COMPLEX<br>Python: <code>cv.FONT_HERSHEY_COMPLEX</code>  </p>
+<h3 id="图片储存为numpy"><a href="#图片储存为numpy" class="headerlink" title="图片储存为numpy"></a>图片储存为numpy</h3><p>示例：</p>
+<pre><code>import cv2
+import numpy as np
+#使用numpy创建二维数组
+img=np.ones((200,200))
+#转化类型
+img=np.int8(img)
+#转化成灰度图片
+img=cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+cv2.imwrite(&quot;demo.jpg&quot;,img)
+</code></pre>
+<h2 id="Win32api"><a href="#Win32api" class="headerlink" title="Win32api"></a>Win32api</h2><pre><code># 获取鼠标当前位置的坐标
+win32api.GetCursorPos()
+# 将鼠标移动到坐标处
+win32api.SetCursorPos((200, 200))
+# 左点击
+win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 200, 200, 0, 0)
+win32api.mouse_event(win32con.MUOSEEVENTF_LEFTUP, 200, 200, 0, 0)
+# 获取窗口句柄
+win32gui.FindWindow(None, &#39;qq&#39;)
+win32gui.FindWindow(&#39;TXGuiFoundation&#39;, None)
+# 通过坐标获取窗口句
+hw = win32gui.WindowFromPoint(win32api.GetCursorPos())
+# 获取窗口classnam
+gui.GetClassName(hw)
+# 获取窗口标题
+win32gui.GetWindowText(hw)
+# 获取窗口坐标
+win32gui.GetwindowRect(hw)
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/21/ScienceCommunity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dog.jpg">
+      <meta itemprop="name" content="lzy">
+      <meta itemprop="description" content="随便发点难以过审的东西，以及个人随笔">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欢迎来到罗宁的个人空间">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/21/ScienceCommunity/" class="post-title-link" itemprop="url">科学社会论</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-21 14:07:46" itemprop="dateCreated datePublished" datetime="2022-04-21T14:07:46+08:00">2022-04-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-22 20:30:58" itemprop="dateModified" datetime="2022-04-22T20:30:58+08:00">2022-04-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E5%AD%A6%E7%A4%BE%E4%BC%9A%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">科学社会论</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="社会科学与自然科学的统一"><a href="#社会科学与自然科学的统一" class="headerlink" title="社会科学与自然科学的统一"></a>社会科学与自然科学的统一</h1><h2 id="现代意识形态的局限性"><a href="#现代意识形态的局限性" class="headerlink" title="现代意识形态的局限性"></a>现代意识形态的局限性</h2><p>随着肉眼可见的“智能化”时代冲击，人们惊讶地发现：意识形态似乎没那么重要了，生产、金融成为主旋律，一个国家可以没有统一的意识形态，但如果既没有生产（制造业）、又缺乏金融体系，那么这个国家的政府只能成为大国傀儡。<br>从20世纪末至今，世界工厂由北美到东亚再迁移至东南亚，在这期间，一个社会主义国家解体，另一个社会主义国家向资本妥协，国际共运彻底陷入低谷。即便最终结论离经叛道，“第九国际”出发点也是国际主义，本文也是作者在研究国际主义、苏联及世界民主变迁后总结的颠覆性思想。因此，我们的首要问题是：搞清楚意识形态是什么、能干什么，再改良或批判它。</p>
+<h3 id="什么是意识形态"><a href="#什么是意识形态" class="headerlink" title="什么是意识形态"></a>什么是意识形态</h3><p>意识形态，哲学范畴词汇，是指一种观念的集合。也可以理解为对事物的理解、认知，它是一种对事物的感观思想，它是观念、观点、概念、思想、价值观等要素的总和。<br>意识形态不是人脑中固有的，而是源于社会而存在。人的意识形态受思维能力、环境、信息（教育、宣传）、价值取向等因素影响。不同的意识形态，对同一种事物的理解、认知也不同。<br>简而言之（那些搞文字游戏的最喜欢一堆屁用没有的废话），意识形态是一个抽象概念，按计算机语言，是一个“类”，用于描述社会观念，这个类实例化后，便成为我们普遍认知中的“共产主义”、“帝国主义”、“民主主义”等。<br>问题来了：&#x3D;&#x3D;请问“共产主义”是一个准确的意识形态吗？&#x3D;&#x3D;<br>不是。<br>为什么？<br>&#x3D;&#x3D;因为：“共产主义”这四个字根本无法准确描述任何东西。&#x3D;&#x3D;<br>我相信很多人疑惑：存在大资本、尼基系数极高、贫富差距极大的国家，居然自称“社会主义”。没错，稍微想想：<strong>我们掉入了一个陷阱，一个政治家用来将矛头对准敌对势利的陷阱！</strong><br>毫无疑问，我们需要用非常高维度的表达式描述一个社会模型，他们凭什么用三言两语概括，然后说：“向万恶的帝国主义宣战？”<br><strong>社会主义与民主主义敌对吗？<br>政府与资本敌对吗？<br>共产主义与帝国主义敌对吗？</strong><br>好吧，你可以说：马列文集写得很清楚，社会主义是怎么样怎么样。<br><del>说的跟真的一样，他们凭啥带你往社会主义高级阶段走</del><br>&#x3D;&#x3D;记住：我们不要看他们说什么、写什么，要看他们做什么。全世界所有政治家希望意识形态理论越复杂越好，越复杂看的人越少，当他们偷梁换柱时，站出来指责他们的人越少。&#x3D;&#x3D;<br>当你发现既不对劲又似乎都能解释时，他们的目的就达到了——在尽可能维护上层利益同时，稳固统治。宏观角度看：<strong>意识形态是建立统治并维护统治的社会思想工具。</strong><br>过去，意识形态创建者喜欢描述一个理想的社会结果（我个人认为他们是纯洁无瑕一腔热血的），但是这种理想往往在某一时刻被曲意歪解。有人说：朱元璋以后，大明就不是大明了；又有人说：大清从未远去。打着现代意识形态、社会制度的幌子搞封建专制，是既得利益者最喜欢做的事情。<br>因此，社会主义只是一个称呼，它无法解释任何东西，且看下图：<br><img src="/ScienceCommunity/1.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lzy"
+      src="/images/dog.jpg">
+  <p class="site-author-name" itemprop="name">lzy</p>
+  <div class="site-description" itemprop="description">随便发点难以过审的东西，以及个人随笔</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lzy</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"scale":0.8,"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"superSample":2,"position":"right","width":250,"height":500,"hOffset":0,"vOffset":0},"mobile":{"show":true},"react":{"opacity":1},"log":false,"tagMode":false});</script></body>
+</html>
