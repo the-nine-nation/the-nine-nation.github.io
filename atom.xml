@@ -3,11 +3,11 @@
   <title>欢迎来到罗宁的个人空间</title>
   
   <subtitle>一个平平无奇的作者</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://www.the-nine-international.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://www.the-nine-international.com/"/>
   <updated>2022-04-21T07:28:53.283Z</updated>
-  <id>http://example.com/</id>
+  <id>http://www.the-nine-international.com/</id>
   
   <author>
     <name>lzy</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>简短的扉页</title>
-    <link href="http://example.com/2022/04/22/hello-world/"/>
-    <id>http://example.com/2022/04/22/hello-world/</id>
+    <link href="http://www.the-nine-international.com/2022/04/22/hello-world/"/>
+    <id>http://www.the-nine-international.com/2022/04/22/hello-world/</id>
     <published>2022-04-22T13:39:09.480Z</published>
     <updated>2022-04-21T07:28:53.283Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>test</title>
-    <link href="http://example.com/2022/04/22/test/"/>
-    <id>http://example.com/2022/04/22/test/</id>
+    <link href="http://www.the-nine-international.com/2022/04/22/test/"/>
+    <id>http://www.the-nine-international.com/2022/04/22/test/</id>
     <published>2022-04-22T08:34:05.000Z</published>
     <updated>2022-04-22T14:38:21.963Z</updated>
     
@@ -61,8 +61,8 @@
   
   <entry>
     <title>pythondoc</title>
-    <link href="http://example.com/2022/04/21/pythondoc/"/>
-    <id>http://example.com/2022/04/21/pythondoc/</id>
+    <link href="http://www.the-nine-international.com/2022/04/21/pythondoc/"/>
+    <id>http://www.the-nine-international.com/2022/04/21/pythondoc/</id>
     <published>2022-04-21T06:49:07.000Z</published>
     <updated>2022-04-22T14:46:10.315Z</updated>
     
@@ -76,29 +76,29 @@
     
     
     
-    <category term="Python" scheme="http://example.com/categories/Python/"/>
+    <category term="Python" scheme="http://www.the-nine-international.com/categories/Python/"/>
     
     
-    <category term="Python环境部署" scheme="http://example.com/tags/Python%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+    <category term="Python环境部署" scheme="http://www.the-nine-international.com/tags/Python%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="conda命令" scheme="http://example.com/tags/conda%E5%91%BD%E4%BB%A4/"/>
+    <category term="conda命令" scheme="http://www.the-nine-international.com/tags/conda%E5%91%BD%E4%BB%A4/"/>
     
-    <category term="Opencv" scheme="http://example.com/tags/Opencv/"/>
+    <category term="Opencv" scheme="http://www.the-nine-international.com/tags/Opencv/"/>
     
-    <category term="cuda及cudnn部署" scheme="http://example.com/tags/cuda%E5%8F%8Acudnn%E9%83%A8%E7%BD%B2/"/>
+    <category term="cuda及cudnn部署" scheme="http://www.the-nine-international.com/tags/cuda%E5%8F%8Acudnn%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="Win32api" scheme="http://example.com/tags/Win32api/"/>
+    <category term="Win32api" scheme="http://www.the-nine-international.com/tags/Win32api/"/>
     
   </entry>
   
   <entry>
     <title>科学社会论</title>
-    <link href="http://example.com/2022/04/21/ScienceCommunity/"/>
-    <id>http://example.com/2022/04/21/ScienceCommunity/</id>
+    <link href="http://www.the-nine-international.com/2022/04/21/ScienceCommunity/"/>
+    <id>http://www.the-nine-international.com/2022/04/21/ScienceCommunity/</id>
     <published>2022-04-21T06:07:46.000Z</published>
-    <updated>2022-04-22T14:55:36.828Z</updated>
+    <updated>2022-04-23T02:25:04.894Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="社会科学与自然科学的统一"><a href="#社会科学与自然科学的统一" class="headerlink" title="社会科学与自然科学的统一"></a>社会科学与自然科学的统一</h1><h2 id="现代意识形态的局限性"><a href="#现代意识形态的局限性" class="headerlink" title="现代意识形态的局限性"></a>现代意识形态的局限性</h2><p>随着肉眼可见的“智能化”时代冲击，人们惊讶地发现：意识形态似乎没那么重要了，生产、金融成为主旋律，一个国家可以没有统一的意识形态，但如果既没有生产（制造业）、又缺乏金融体系，那么这个国家的政府只能成为大国傀儡。<br>从20世纪末至今，世界工厂由北美到东亚再迁移至东南亚，在这期间，一个社会主义国家解体，另一个社会主义国家向资本妥协，国际共运彻底陷入低谷。即便最终结论离经叛道，“第九国际”出发点也是国际主义，本文也是作者在研究国际主义、苏联及世界民主变迁后总结的颠覆性思想。因此，我们的首要问题是：搞清楚意识形态是什么、能干什么，再改良或批判它。</p><h3 id="什么是意识形态"><a href="#什么是意识形态" class="headerlink" title="什么是意识形态"></a>什么是意识形态</h3><p>意识形态，哲学范畴词汇，是指一种观念的集合。也可以理解为对事物的理解、认知，它是一种对事物的感观思想，它是观念、观点、概念、思想、价值观等要素的总和。</p><p>意识形态不是人脑中固有的，而是源于社会而存在。人的意识形态受思维能力、环境、信息（教育、宣传）、价值取向等因素影响。不同的意识形态，对同一种事物的理解、认知也不同。</p><p>简而言之（那些搞文字游戏的最喜欢一堆屁用没有的废话），意识形态是一个抽象概念，按计算机语言，是一个“类”，用于描述社会观念，这个类实例化后，便成为我们普遍认知中的“共产主义”、“帝国主义”、“民主主义”等。</p><p><strong>问题来了：请问“共产主义”是一个准确的意识形态吗？</strong></p><p>不是。</p><p>为什么？</p><p>因为：“共产主义”这四个字根本无法准确描述任何东西。</p><p>我相信很多人疑惑：存在大资本、尼基系数极高、贫富差距极大的国家，居然自称“社会主义”。没错，稍微想想：<strong>我们掉入了一个陷阱，一个政治家用来将矛头对准敌对势利的陷阱！</strong></p><p>毫无疑问，我们需要用非常高维度的表达式描述一个社会模型，他们凭什么用三言两语概括，然后说：“向万恶的帝国主义宣战？”</p><p><strong>社会主义与民主主义敌对吗？<br>政府与资本敌对吗？<br>共产主义与帝国主义敌对吗？</strong></p><p>好吧，你可以说：马列文集写得很清楚，社会主义是怎么样怎么样。</p><p><del>搞的跟真的一样，他们凭啥带你往社会主义高级阶段走</del></p><p><em><strong>记住：我们不要看他们说什么、写什么，要看他们做什么。全世界所有政治家希望意识形态理论越复杂越好，越复杂看的人越少，当他们偷梁换柱时，站出来指责他们的人越少。</strong></em></p><p>当你发现既不对劲又似乎都能解释时，他们的目的就达到了——在尽可能维护上层利益同时，稳固统治。宏观角度看：<strong>意识形态是建立统治并维护统治的社会思想工具。</strong></p><p>过去，意识形态创建者喜欢描述一个理想的社会结果（我个人认为他们是纯洁无瑕一腔热血的），但是这种理想往往在某一时刻被曲意歪解。有人说：朱元璋以后，大明就不是大明了；又有人说：大清从未远去。打着现代意识形态、社会制度的幌子搞封建专制，是既得利益者最喜欢做的事情。</p><p>因此，社会主义只是一个称呼，它无法解释任何东西，且看下图：</p><img src="/2022/04/21/ScienceCommunity/1.png" class=""><p>人真喜欢在生活中用这些复杂到影响工作效率的东西吗？</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="社会科学与自然科学的统一"><a href="#社会科学与自然科学的统一" class="headerlink" title="社会科学与自然科学的统一"></a>社会科学与自然科学的统一</h1><h2 id="现代意识形态的局限性"><a href="#现代意识形态的局限性" class="headerlink" title="现代意识形态的局限性"></a>现代意识形态的局限性</h2><p>随着肉眼可见的“智能化”时代冲击，人们惊讶地发现：意识形态似乎没那么重要了，生产、金融成为主旋律，一个国家可以没有统一的意识形态，但如果既没有生产（制造业）、又缺乏金融体系，那么这个国家的政府只能成为大国傀儡。<br>从20世纪末至今，世界工厂由北美到东亚再迁移至东南亚，在这期间，一个社会主义国家解体，另一个社会主义国家向资本妥协，国际共运彻底陷入低谷。即便最终结论离经叛道，“第九国际”出发点也是国际主义，本文也是作者在研究国际主义、苏联及世界民主变迁后总结的颠覆性思想。因此，我们的首要问题是：搞清楚意识形态是什么、能干什么，再改良或批判它。</p><h3 id="什么是意识形态"><a href="#什么是意识形态" class="headerlink" title="什么是意识形态"></a>什么是意识形态</h3><p>意识形态，哲学范畴词汇，是指一种观念的集合。也可以理解为对事物的理解、认知，它是一种对事物的感观思想，它是观念、观点、概念、思想、价值观等要素的总和。</p><p>意识形态不是人脑中固有的，而是源于社会而存在。人的意识形态受思维能力、环境、信息（教育、宣传）、价值取向等因素影响。不同的意识形态，对同一种事物的理解、认知也不同。</p><p>简而言之（那些搞文字游戏的最喜欢一堆屁用没有的废话），意识形态是一个抽象概念，按计算机语言，是一个“类”，用于描述社会观念，这个类实例化后，便成为我们普遍认知中的“共产主义”、“帝国主义”、“民主主义”等。</p><p><strong>问题来了：请问“共产主义”是一个准确的意识形态吗？</strong></p><p>不是。</p><p>为什么？</p><p>因为：“共产主义”这四个字根本无法准确描述任何东西。</p><p>我相信很多人疑惑：存在大资本、尼基系数极高、贫富差距极大的国家，居然自称“社会主义”。没错，稍微想想：<strong>我们掉入了一个陷阱，一个政治家用来将矛头对准敌对势利的陷阱！</strong></p><p>毫无疑问，我们需要用非常高维度的表达式描述一个社会模型，他们凭什么用三言两语概括，然后说：“向万恶的帝国主义宣战？”</p><p><strong>社会主义与民主主义敌对吗？<br>政府与资本敌对吗？<br>共产主义与帝国主义敌对吗？</strong></p><p>好吧，你可以说：马列文集写得很清楚，社会主义是怎么样怎么样。</p><p><del>搞的跟真的一样，他们凭啥带你往社会主义高级阶段走</del></p><p><em><strong>记住：我们不要看他们说什么、写什么，要看他们做什么。全世界所有政治家希望意识形态理论越复杂越好，越复杂看的人越少，当他们偷梁换柱时，站出来指责他们的人越少。</strong></em></p><p>当你发现既不对劲又似乎都能解释时，他们的目的就达到了——在尽可能维护上层利益同时，稳固统治。宏观角度看：<strong>意识形态是建立统治并维护统治的社会思想工具。</strong></p><p>过去，意识形态创建者喜欢描述一个理想的社会结果（我个人认为他们是纯洁无瑕一腔热血的），但是这种理想往往在某一时刻被曲意歪解。有人说：朱元璋以后，大明就不是大明了；又有人说：大清从未远去。打着现代意识形态、社会制度的幌子搞封建专制，是既得利益者最喜欢做的事情。</p><p>综上，社会主义只是一个称呼，它无法解释任何东西，且看下图：</p><img src="/2022/04/21/ScienceCommunity/1.png" class=""><p>于是奇怪的现象产生了：由于意识形态进化在社会生产、演变过程中不断迭代，可以认为他们产自同样的近似的基类，作者将这个基类命名为“权资一体化主义“。它的主要特征是：<em>权力与资本等价，例如奴隶制中，奴隶既是奴隶主资产，也是奴隶主权力的象征；在君主制（帝制）中，仅有自上而下一种和平的监管方式，因此绝大多数君主朝代，缺乏有效平衡手段，社会最终逐渐朝官商一体化发展，商人能通过贿赂政府官员取得权力等价物，官员能够主动要求贿赂得到与资本等效的产出。</em>这种社会正是鲁迅笔下“吃人的社会”，普通人往往不被上层建筑视作同类。</p><p>随即，一种叫做“良心”的东西让某些知识分子和统治者觉得：有必要将人民视作国家资产，妥善保护了。<del>或许得益于哲学发展他们终于认识到皇帝和讨饭的属于同一物种吧。</del>人权运动开始发酵（某不幸的东方国家恰巧跳过这一步，后文会讲缺漏人权哲学所导致的一系列后果），民众接触到哲学书籍，走上街头，抗议或发动战争，推翻了奴隶主和君主。尽管这两件事情稍有区别，但本质完全相同：普通人逐渐开始被当做人了。紧接着理论科学、工程科学飞速发展带来工业革命，工人取代农民成为社会主要阶层（也可以认为一部分农民、手工业者、商人开始为工业服务），在这个时代，资本的恶劣被思想家放大，因为经济逻辑证明投机是不劳而获的手段，而拥有生产机器的人们逐渐像奴隶主那样尝试控制工人劳作时间和薪酬为自身谋取利益。不甘于白白送出财富的资本家试图渗透、掌控政府，以扭转民主化进程，他们觉得：给人民过多权利有碍工业生产，社会阶层得像数百年前那样贵族永远是贵族才好，人类天生对后代的继承倾向令他们感到不安。</p><p>但是，普通人也存在相同的倾向，如果一个工人的后代必定是工人，想象孩子们无法逃离每日十余小时却拿不到相应报酬的艰苦工作环境，他们便会选择反抗，要么不生育，要么街头游行抗议。作者个人并不赞同前者，毕竟繁衍后代乃生物本能，况且人民本来就有抵抗残暴统治的权力，他们制定法律、规则时鸟都不鸟你平民老百姓，你还按照他们规矩走，不是奴性是什么？</p>]]></content>
     
     
       
@@ -108,7 +108,7 @@
     
     
     
-    <category term="科学社会论" scheme="http://example.com/categories/%E7%A7%91%E5%AD%A6%E7%A4%BE%E4%BC%9A%E8%AE%BA/"/>
+    <category term="科学社会论" scheme="http://www.the-nine-international.com/categories/%E7%A7%91%E5%AD%A6%E7%A4%BE%E4%BC%9A%E8%AE%BA/"/>
     
     
   </entry>
