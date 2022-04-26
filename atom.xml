@@ -3,11 +3,11 @@
   <title>欢迎来到罗宁的个人空间</title>
   
   <subtitle>一个平平无奇的作者</subtitle>
-  <link href="http://www.the-nine-international.com/atom.xml" rel="self"/>
+  <link href="https://the-nine-nation.github.io/atom.xml" rel="self"/>
   
-  <link href="http://www.the-nine-international.com/"/>
+  <link href="https://the-nine-nation.github.io/"/>
   <updated>2022-04-25T02:10:10.655Z</updated>
-  <id>http://www.the-nine-international.com/</id>
+  <id>https://the-nine-nation.github.io/</id>
   
   <author>
     <name>lzy</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>二元式社会的不可持续性</title>
-    <link href="http://www.the-nine-international.com/2022/04/25/notes1/"/>
-    <id>http://www.the-nine-international.com/2022/04/25/notes1/</id>
+    <link href="https://the-nine-nation.github.io/2022/04/25/notes1/"/>
+    <id>https://the-nine-nation.github.io/2022/04/25/notes1/</id>
     <published>2022-04-25T01:25:36.000Z</published>
     <updated>2022-04-25T02:10:10.655Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>简短的扉页</title>
-    <link href="http://www.the-nine-international.com/2022/04/22/hello-world/"/>
-    <id>http://www.the-nine-international.com/2022/04/22/hello-world/</id>
+    <link href="https://the-nine-nation.github.io/2022/04/22/hello-world/"/>
+    <id>https://the-nine-nation.github.io/2022/04/22/hello-world/</id>
     <published>2022-04-22T13:39:09.480Z</published>
     <updated>2022-04-25T02:07:34.104Z</updated>
     
@@ -59,8 +59,8 @@
   
   <entry>
     <title>test</title>
-    <link href="http://www.the-nine-international.com/2022/04/22/test/"/>
-    <id>http://www.the-nine-international.com/2022/04/22/test/</id>
+    <link href="https://the-nine-nation.github.io/2022/04/22/test/"/>
+    <id>https://the-nine-nation.github.io/2022/04/22/test/</id>
     <published>2022-04-22T08:34:05.000Z</published>
     <updated>2022-04-22T14:38:21.963Z</updated>
     
@@ -80,8 +80,8 @@
   
   <entry>
     <title>pythondoc</title>
-    <link href="http://www.the-nine-international.com/2022/04/21/pythondoc/"/>
-    <id>http://www.the-nine-international.com/2022/04/21/pythondoc/</id>
+    <link href="https://the-nine-nation.github.io/2022/04/21/pythondoc/"/>
+    <id>https://the-nine-nation.github.io/2022/04/21/pythondoc/</id>
     <published>2022-04-21T06:49:07.000Z</published>
     <updated>2022-04-22T14:46:10.315Z</updated>
     
@@ -95,25 +95,25 @@
     
     
     
-    <category term="Python" scheme="http://www.the-nine-international.com/categories/Python/"/>
+    <category term="Python" scheme="https://the-nine-nation.github.io/categories/Python/"/>
     
     
-    <category term="Python环境部署" scheme="http://www.the-nine-international.com/tags/Python%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
+    <category term="Python环境部署" scheme="https://the-nine-nation.github.io/tags/Python%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="conda命令" scheme="http://www.the-nine-international.com/tags/conda%E5%91%BD%E4%BB%A4/"/>
+    <category term="conda命令" scheme="https://the-nine-nation.github.io/tags/conda%E5%91%BD%E4%BB%A4/"/>
     
-    <category term="Opencv" scheme="http://www.the-nine-international.com/tags/Opencv/"/>
+    <category term="Opencv" scheme="https://the-nine-nation.github.io/tags/Opencv/"/>
     
-    <category term="cuda及cudnn部署" scheme="http://www.the-nine-international.com/tags/cuda%E5%8F%8Acudnn%E9%83%A8%E7%BD%B2/"/>
+    <category term="cuda及cudnn部署" scheme="https://the-nine-nation.github.io/tags/cuda%E5%8F%8Acudnn%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="Win32api" scheme="http://www.the-nine-international.com/tags/Win32api/"/>
+    <category term="Win32api" scheme="https://the-nine-nation.github.io/tags/Win32api/"/>
     
   </entry>
   
   <entry>
     <title>科学社会论</title>
-    <link href="http://www.the-nine-international.com/2022/04/21/ScienceCommunity/"/>
-    <id>http://www.the-nine-international.com/2022/04/21/ScienceCommunity/</id>
+    <link href="https://the-nine-nation.github.io/2022/04/21/ScienceCommunity/"/>
+    <id>https://the-nine-nation.github.io/2022/04/21/ScienceCommunity/</id>
     <published>2022-04-21T06:07:46.000Z</published>
     <updated>2022-04-25T08:17:45.302Z</updated>
     
@@ -127,7 +127,7 @@
     
     
     
-    <category term="科学社会论" scheme="http://www.the-nine-international.com/categories/%E7%A7%91%E5%AD%A6%E7%A4%BE%E4%BC%9A%E8%AE%BA/"/>
+    <category term="科学社会论" scheme="https://the-nine-nation.github.io/categories/%E7%A7%91%E5%AD%A6%E7%A4%BE%E4%BC%9A%E8%AE%BA/"/>
     
     
   </entry>
