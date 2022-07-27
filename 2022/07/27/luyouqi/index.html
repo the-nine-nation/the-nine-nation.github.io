@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"the-nine-nation.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="电信天翼网关更改桥接详细教程（基于2.0版本）原理及步骤​    搞清楚原理是举一反三基础，在碰壁N此后，俺终于搞定了难缠的路由器，并弄懂整个流程原理。其实不难，但网上教程基本只给特例，你想搞清楚自己每一步究竟在做什么可谓天方夜谭，为避免未来遗忘，有必要做此笔记。 ​    1、首先，当我们登录路由器时，实际登录的是路由器呈现的一个web界面，路由器本身是一台电脑（不知道这个定义是否准确），拥有自">
+<meta property="og:type" content="article">
+<meta property="og:title" content="天翼网关更改桥接教程">
+<meta property="og:url" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/index.html">
+<meta property="og:site_name" content="欢迎来到第九国际">
+<meta property="og:description" content="电信天翼网关更改桥接详细教程（基于2.0版本）原理及步骤​    搞清楚原理是举一反三基础，在碰壁N此后，俺终于搞定了难缠的路由器，并弄懂整个流程原理。其实不难，但网上教程基本只给特例，你想搞清楚自己每一步究竟在做什么可谓天方夜谭，为避免未来遗忘，有必要做此笔记。 ​    1、首先，当我们登录路由器时，实际登录的是路由器呈现的一个web界面，路由器本身是一台电脑（不知道这个定义是否准确），拥有自">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/1.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/2.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/3.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/4.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/5.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/6.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/7.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/8.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/9.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/10.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/11.png">
+<meta property="og:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/12.png">
+<meta property="article:published_time" content="2022-07-27T09:15:51.000Z">
+<meta property="article:modified_time" content="2022-07-27T10:37:16.062Z">
+<meta property="article:author" content="lroming">
+<meta property="article:tag" content="天翼网关">
+<meta property="article:tag" content="桥接">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="网关">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://the-nine-nation.github.io/2022/07/27/luyouqi/1.png">
+
+<link rel="canonical" href="https://the-nine-nation.github.io/2022/07/27/luyouqi/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>天翼网关更改桥接教程 | 欢迎来到第九国际</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="欢迎来到第九国际" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">欢迎来到第九国际</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">无拘无束的小地方</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">16</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://the-nine-nation.github.io/2022/07/27/luyouqi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dog.jpg">
+      <meta itemprop="name" content="lroming">
+      <meta itemprop="description" content="随便发点难以过审的东西，以及个人随笔">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欢迎来到第九国际">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          天翼网关更改桥接教程
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-27 17:15:51 / 修改时间：18:37:16" itemprop="dateCreated datePublished" datetime="2022-07-27T17:15:51+08:00">2022-07-27</time>
+            </span>
+
+          
+            <span id="/2022/07/27/luyouqi/" class="post-meta-item leancloud_visitors" data-flag-title="天翼网关更改桥接教程" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/07/27/luyouqi/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/27/luyouqi/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="电信天翼网关更改桥接详细教程（基于2-0版本）"><a href="#电信天翼网关更改桥接详细教程（基于2-0版本）" class="headerlink" title="电信天翼网关更改桥接详细教程（基于2.0版本）"></a>电信天翼网关更改桥接详细教程（基于2.0版本）</h1><h2 id="原理及步骤"><a href="#原理及步骤" class="headerlink" title="原理及步骤"></a>原理及步骤</h2><p>​    搞清楚原理是举一反三基础，在碰壁N此后，俺终于搞定了难缠的路由器，并弄懂整个流程原理。其实不难，但网上教程基本只给特例，你想搞清楚自己每一步究竟在做什么可谓天方夜谭，为避免未来遗忘，有必要做此笔记。</p>
+<p>​    1、首先，当我们登录路由器时，实际登录的是路由器呈现的一个web界面，路由器本身是一台电脑（不知道这个定义是否准确），拥有自己的操作系统和接口。平常登录时，我们通过操作web界面的接口更改路由器设置，而把PPPoE（拨号）改桥接是电信禁止的事情，因此我们需要弄到“超级管理员账号密码”，才能进行下一步diy操作。</p>
+<p>​    2、原先我以为登录路由器超级账号时机器会向电信服务器发送一个请求，以核对账号密码，结果我想多了，根据大佬们教程，所谓超级账号密码就在网关内一个config文件里……那么怎么拿到这个文件呢？</p>
+<p>​    3、众所周知javascript并不靠谱，你可以轻易通过f12看到html、css和js文件，由此可以通过网关内自带usb储存进入根目录。（因为设置桥接后进网关比较麻烦，所以用现成的网络图片）。</p>
+<img src="/2022/07/27/luyouqi/1.png" class="">
+<p>找到储存设置界面，接下来有两种看似不通实质相同方法。</p>
+<img src="/2022/07/27/luyouqi/2.png" class="">
+<p>​    a) 不熟悉web的朋友右键点击任意一个usb内文件夹，点击检查（N），进入开发者工具</p>
+<img src="/2022/07/27/luyouqi/3.png" class="">
+<img src="/2022/07/27/luyouqi/4.png" class="">
+<p>找到对应位置的html代码，往上找class里面有folder最近的一行。</p>
+<img src="/2022/07/27/luyouqi/5.png" class="">
+<p>右键编辑为html。这部分操作很多人不知道原因，实际上就是通过更改html中javascript跳转代码，让原本进入子目录的操作变成退回上一级目录，众所周知在许多语言中，上一级目录代码都为 .. 两个英文点，接下来我们就需要在选中的这一行里，把包含文件夹名字的代码改成 .. 你可以找到一个左键拖动选中，就能看见所有需要更改的部分，共四个。</p>
+<img src="/2022/07/27/luyouqi/6.png" class="">
+<img src="/2022/07/27/luyouqi/7.png" class="">
+<p>改完后随便点个空白位置，文件夹就变成 .. 了</p>
+<img src="/2022/07/27/luyouqi/8.png" class="">
+<p>点击该文件夹，重复上述f12改的步骤，继续进入更上一层，于是乎，就来到根目录啦！</p>
+<img src="/2022/07/27/luyouqi/9.png" class="">
+<p>​    b）熟悉web的朋友可以优雅地打开光猫地址</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/cgi-bin/</span>luci<span class="regexp">/admin/</span>storage/settings</span><br></pre></td></tr></table></figure>
+<p>随后直接在console控制台跳转</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">get_path_files</span><span class="params">(<span class="string">&quot;/mnt/usb1_2/../..&quot;</span>)</span></span></span><br></pre></td></tr></table></figure>
+<p>不同光猫、不同usb，代码稍有不同，改改就能用。</p>
+<p>​    4、进入根目录后，就得根据光猫型号找到相应配置文件夹位置，用百度搜搜，我是在：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:<span class="regexp">//</span>www.right.com.cn<span class="regexp">/forum/</span>thread-<span class="number">2203236</span>-<span class="number">1</span>-<span class="number">1</span>.html</span><br></pre></td></tr></table></figure>
+<p>这个帖子里找到文件位置的，以俺ZXHN F450为例，找到/userconfig/cfg 文件名db_user_cfg.xml，选中白框框复制到你的u盘内，取下，插入电脑，通常你会看到一堆乱码，怎么办呢？</p>
+<p>​    5、我们需要一个叫做“ RouterPassView ”的东西帮我们读取xml文件，迅雷盘链接如下：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">链接：https:<span class="regexp">//</span>pan.xunlei.com<span class="regexp">/s/</span>VN7zA2dy0fmiwaWeEd8yCpSVA1</span><br><span class="line">提取码：y7be</span><br></pre></td></tr></table></figure>
+<p>打开xml文件，点击edit-find 输入tele搜索，即可获得超级管理员账号密码。</p>
+<img src="/2022/07/27/luyouqi/10.png" class="">
+<p>先别急着关哦，随后我们进入网关内部，找到PPPoE账号，有时候我们忘记了拨号密码，就可以通过在xml文件内查询账号的方式找到拨号密码。</p>
+<img src="/2022/07/27/luyouqi/11.png" class="">
+<p>将上网更改为桥接，再进入我们自己的路由器内，将上网方式由桥接改为PPPoE拨号。</p>
+<img src="/2022/07/27/luyouqi/12.png" class="">
+<h2 id="改桥接好处"><a href="#改桥接好处" class="headerlink" title="改桥接好处"></a>改桥接好处</h2><p>​    为什么要费尽心思将电信给你的猫猫废掉呢？实际上电信光猫有非常多的功能，当你通过超级管理员进入时就会发现，什么防火墙、nat 、dmz啥的都有，却由于种种原因未开放，如果你的路由器并不好，建议直接启用光猫功能而非改桥接，同时普通账号提供的端口转发服务，不知为何在我这里并不起效，还得靠路由器。</p>
+<p>​    如当你打电话让客服改成公网ip，再改桥接后，互联网的世界才正式开始，买个ddns服务器，架网站，简直爽歪歪。等我后续打通技术栈，就更新个人网页服务器和储存服务器教程。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%A4%A9%E7%BF%BC%E7%BD%91%E5%85%B3/" rel="tag"># 天翼网关</a>
+              <a href="/tags/%E6%A1%A5%E6%8E%A5/" rel="tag"># 桥接</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag"># 网络</a>
+              <a href="/tags/%E7%BD%91%E5%85%B3/" rel="tag"># 网关</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/18/yolov5/" rel="prev" title="yolov5详细教程、分析和改良">
+      <i class="fa fa-chevron-left"></i> yolov5详细教程、分析和改良
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B5%E4%BF%A1%E5%A4%A9%E7%BF%BC%E7%BD%91%E5%85%B3%E6%9B%B4%E6%94%B9%E6%A1%A5%E6%8E%A5%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%EF%BC%88%E5%9F%BA%E4%BA%8E2-0%E7%89%88%E6%9C%AC%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">电信天翼网关更改桥接详细教程（基于2.0版本）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E7%90%86%E5%8F%8A%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.</span> <span class="nav-text">原理及步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E6%A1%A5%E6%8E%A5%E5%A5%BD%E5%A4%84"><span class="nav-number">1.2.</span> <span class="nav-text">改桥接好处</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="lroming"
+      src="/images/dog.jpg">
+  <p class="site-author-name" itemprop="name">lroming</p>
+  <div class="site-description" itemprop="description">随便发点难以过审的东西，以及个人随笔</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lroming</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : true,
+      appId      : '43EfkcNI63KqdNQ23BDTNfJ0-gzGzoHsz',
+      appKey     : 'mfVHh4jzB8o5VabRvwA5rR6P',
+      placeholder: "文明讨论、和谐交流。",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'en, zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"scale":0.8,"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"superSample":2,"position":"right","width":250,"height":500,"hOffset":0,"vOffset":0},"mobile":{"show":true},"react":{"opacity":1},"log":false,"tagMode":false});</script></body>
+</html>
