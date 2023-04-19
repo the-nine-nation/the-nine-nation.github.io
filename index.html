@@ -1045,7 +1045,7 @@ x_0=z/(A_1+A_2)</script><p>​    然而，当人口处于x_m时，社会并不�
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-04-19 10:37:16" itemprop="dateModified" datetime="2023-04-19T10:37:16+08:00">2023-04-19</time>
+                <time title="修改时间：2023-04-19 17:09:57" itemprop="dateModified" datetime="2023-04-19T17:09:57+08:00">2023-04-19</time>
               </span>
 
           
@@ -1081,6 +1081,7 @@ x_0=z/(A_1+A_2)</script><p>​    然而，当人口处于x_m时，社会并不�
 
       
           <h1 id="Pytorch学习笔记"><a href="#Pytorch学习笔记" class="headerlink" title="Pytorch学习笔记"></a>Pytorch学习笔记</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    以前一直使用TensorFlow 的keras库，但人毕竟要跟上潮流，pytorch早晚能占据绝大部分市场</p>
+<h2 id="前置需求——cuda、cudnn、tensorrt版本对应要求"><a href="#前置需求——cuda、cudnn、tensorrt版本对应要求" class="headerlink" title="前置需求——cuda、cudnn、tensorrt版本对应要求"></a>前置需求——cuda、cudnn、tensorrt版本对应要求</h2><p>找老半天，终于在onnx官网弄到全部的资料，链接如下：<br><a target="_blank" rel="noopener" href="https://onnxruntime.ai/docs/execution-providers">https://onnxruntime.ai/docs/execution-providers</a><br>具体表格如图：（cuda、tensorrT、onnx版本关系）<br>| ONNX Runtime | TensorRT | CUDA    |   |   |   |   |   |   |   |<br>|———————|—————|————-|—-|—-|—-|—-|—-|—-|—-|<br>| main         | 8.5      | 11.6    |   |   |   |   |   |   |   |<br>| 1.14         | 8.5      | 11.6    |   |   |   |   |   |   |   |<br>| 1.12-1.13    | 8.4      | 11.4    |   |   |   |   |   |   |   |<br>| 1.11         | 8.2      | 11.4    |   |   |   |   |   |   |   |<br>| 1.10         | 8.0      | 11.4    |   |   |   |   |   |   |   |<br>| 1.9          | 8.0      | 11.4    |   |   |   |   |   |   |   |<br>| 1.7-1.8      | 7.2      | 11.0.3  |   |   |   |   |   |   |   |<br>| 1.5-1.6      | 7.1      | 10.2    |   |   |   |   |   |   |   |<br>| 1.2-1.4      | 7.0      | 10.1    |   |   |   |   |   |   |   |<br>另外一张，因为太大了只能用图片表示：<br><img src="pytorch_md_files/e523db70-de91-11ed-bbd2-01682820a119_20230419170913.jpeg?v=1&amp;type=image&amp;token=V1:M84thFtB0KmPrnu-Ke5dyEmOZtcgiJAcUx1MQCdpAMU" alt="cuda、cudnn、onnx关系"></p>
 <h2 id="Main"><a href="#Main" class="headerlink" title="Main"></a>Main</h2><h3 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h3><div class="table-container">
 <table>
 <thead>
