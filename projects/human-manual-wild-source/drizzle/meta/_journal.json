@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1784008963839,
+      "tag": "0000_bent_tomas",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1784009121061,
+      "tag": "0001_cold_marvel_apes",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1784010940571,
+      "tag": "0002_yielding_nebula",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1784013910902,
+      "tag": "0003_free_master_chief",
+      "breakpoints": true
+    }
+  ]
+}

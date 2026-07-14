@@ -1,0 +1,15 @@
+:root { --font-geist-sans: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; --font-geist-mono: "SFMono-Regular", Consolas, monospace; }
+.link-button { border:0; background:none; color:inherit; cursor:pointer; font:inherit; padding:7px 0; }
+.pages-header .brand { padding:0; }
+.pages-note { margin:0; padding:28px clamp(24px,7vw,108px); background:var(--acid); border-block:2px solid var(--ink); display:flex; gap:30px; align-items:center; }
+.pages-note b { white-space:nowrap; }
+.pages-note p { margin:0; font-size:12px; line-height:1.7; opacity:.7; }
+.pages-dashboard { padding:55px clamp(24px,7vw,108px) 100px; display:grid; grid-template-columns:300px 1fr; gap:35px; align-items:start; }
+.profile-card form { display:grid; gap:10px; margin-top:18px; }
+.profile-card input { width:100%; min-height:42px; border:1.5px solid white; background:rgba(255,255,255,.1); color:white; padding:0 12px; }
+.history-card { width:100%; color:inherit; text-align:left; cursor:pointer; }
+.admin-static-row { min-height:66px; display:grid; grid-template-columns:54px 1fr; gap:12px; align-items:center; border-top:1px solid var(--line); }
+.admin-static-row b,.admin-static-row small { display:block; }
+.admin-static-row b { font-size:12px; margin-bottom:4px; }
+.admin-static-row small { font-size:9px; opacity:.5; }
+@media(max-width:720px){.pages-header .header-nav .link-button{display:none}.pages-note{align-items:flex-start;flex-direction:column;gap:8px}.pages-dashboard{padding:30px 18px 70px;grid-template-columns:1fr}.pages-header .mini-button{font-size:0}.pages-header .mini-button:after{content:"开始探索";font-size:11px}}
