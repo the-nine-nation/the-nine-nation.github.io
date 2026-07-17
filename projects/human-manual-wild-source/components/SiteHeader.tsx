@@ -1,8 +1,9 @@
 import Link from "next/link";
 import type { ChatGPTUser } from "../app/chatgpt-auth";
 import { chatGPTSignInPath, chatGPTSignOutPath } from "../app/chatgpt-auth";
+import { ParticipantGate } from "./ParticipantGate";
 
-export function SiteHeader({ user, role }: { user: ChatGPTUser | null; role?: string }) {
+export function SiteHeader({ user, role, publicMode = false }: { user?: ChatGPTUser | null; role?: string; publicMode?: boolean }) {
   return (
     <header className="site-header">
       <Link href="/" className="brand" aria-label="人类说明书首页">
@@ -11,9 +12,11 @@ export function SiteHeader({ user, role }: { user: ChatGPTUser | null; role?: st
         <small>野生版</small>
       </Link>
       <nav className="header-nav" aria-label="主导航">
-        <Link href="/journey">我到底哪根筋</Link>
-        {user ? (
+        {publicMode ? (
+          <ParticipantGate className="mini-button">开始拆封自己</ParticipantGate>
+        ) : user ? (
           <>
+            <Link href="/journey">我到底哪根筋</Link>
             <Link href="/dashboard">我的说明书</Link>
             {role === "admin" ? <Link href="/admin">人类观察室</Link> : null}
             <a className="avatar-link" href={chatGPTSignOutPath("/")} title="退出登录">

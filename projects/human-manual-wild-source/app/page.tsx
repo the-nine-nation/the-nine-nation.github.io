@@ -1,24 +1,17 @@
-import Link from "next/link";
-import { getChatGPTUser } from "./chatgpt-auth";
 import { SiteHeader } from "../components/SiteHeader";
-import { ensureUser } from "../lib/data";
+import { ParticipantGate } from "../components/ParticipantGate";
 
-export const dynamic = "force-dynamic";
-
-export default async function Home() {
-  const user = await getChatGPTUser();
-  const profile = user ? await ensureUser(user.email, user.displayName) : null;
-
+export default function Home() {
   return (
     <main className="home-page manual-home">
-      <SiteHeader user={user} role={profile?.role} />
+      <SiteHeader publicMode />
       <section className="hero-section manual-hero">
         <div className="hero-copy">
-          <p className="eyebrow"><span>人类说明书 · 野生版</span><i>PATCH 2.0</i></p>
+          <p className="eyebrow"><span>人类说明书 · 野生版</span><i>PATCH 3.0</i></p>
           <h1>你不是四个字母，<br /><em>你是一整套勉强能运行的系统。</em></h1>
           <p className="hero-intro">三轮动态追问，越答越像你。第 1 轮看默认设置，第 2 轮专打模糊地带，第 3 轮深挖价值、关系、边界和那些你嘴上说“没事”但身体很诚实的部分。</p>
           <div className="hero-actions">
-            <Link href="/journey" className="primary-button">参加“我到底哪根筋” <span>↗</span></Link>
+            <ParticipantGate className="primary-button">参加“我到底哪根筋” <span>↗</span></ParticipantGate>
             <a href="#how" className="text-link">先看这局怎么玩 ↓</a>
           </div>
           <div className="hero-meta">
@@ -70,7 +63,7 @@ export default async function Home() {
 
       <section className="report-preview-section">
         <div className="preview-paper manual-preview"><div className="preview-label">阶段 02 / 多维校准</div><div className="preview-type">INFP</div><p>暂定人类原型</p><h3>意义收藏癖</h3><div className="preview-tags"><span>成长 82</span><span>连接 76</span><span>反刍 68</span></div><div className="preview-bars"><i style={{width:"82%"}}/><i style={{width:"67%"}}/><i style={{width:"75%"}}/><i style={{width:"58%"}}/></div></div>
-        <div className="preview-copy"><p className="eyebrow">REPORT AFTER EVERY ROUND</p><h2>每一轮都有答案，<br />但下一轮会推翻一点。</h2><p>阶段报告会明确告诉你当前可信度、哪些结论还很初步，以及下一轮准备校准什么。最终报告不止 MBTI，还会给出价值排序、压力程序、边界、恢复弹性、内在矛盾与 7 天微实验。</p><Link href="/journey" className="primary-button">生成我的野生说明书 <span>↗</span></Link></div>
+        <div className="preview-copy"><p className="eyebrow">REPORT AFTER EVERY ROUND</p><h2>每一轮都有答案，<br />但下一轮会推翻一点。</h2><p>阶段报告会明确告诉你当前可信度、哪些结论还很初步，以及下一轮准备校准什么。最终报告不止 MBTI，还会给出价值排序、压力程序、边界、恋爱引力场、恢复弹性、内在矛盾与 7 天微实验。</p><ParticipantGate className="primary-button">生成我的野生说明书 <span>↗</span></ParticipantGate></div>
       </section>
 
       <footer className="site-footer"><div><span className="brand-orbit">※</span><b>人类说明书</b></div><p>认识自己，不必先坐端正。</p><span>© 2026 HUMAN MANUAL · 野生版 / 非诊断</span></footer>
